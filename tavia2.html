@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine's Day Surprise</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+      body {
+        font-family: "Dancing Script", cursive;
+        background-color: #f4e8f4; /* light purple background */
+        color: #6b5b6b; /* dark purple text */
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        position: relative;
+        overflow-x: hidden;
+      }
+
+      header {
+        background-color: #d67ad6; /* pink header background */
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0;
+        color: #fff; /* white text */
+        font-size: 36px;
+      }
+
+      section {
+        padding: 40px 0;
+        text-align: center;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 0 20px;
+      }
+
+      h2 {
+        color: #943e94; /* dark pink text */
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 40px;
+      }
+
+      .gallery video {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .gallery video:hover {
+        transform: scale(1.05);
+      }
+
+      footer {
+        background-color: #d67ad6; /* pink footer background */
+        padding: 20px 0;
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        position: relative;
+      }
+
+      /* Custom animations */
+      .heart {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-image: url("heart.png"); /* Replace 'heart.png' with your heart image */
+        background-size: cover;
+        animation: heartAnimation 2s ease-in-out infinite;
+      }
+
+      @keyframes heartAnimation {
+        0% {
+          transform: translateY(0) rotate(0deg);
+        }
+        50% {
+          transform: translateY(-30px) rotate(45deg);
+        }
+        100% {
+          transform: translateY(0) rotate(0deg);
+        }
+      }
+
+      .cloud {
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        background-image: url("cloud.png"); /* Replace 'cloud.png' with your cloud image */
+        background-size: cover;
+        animation: cloudAnimation 10s linear infinite;
+      }
+
+      @keyframes cloudAnimation {
+        0% {
+          left: -200px;
+        }
+        100% {
+          left: calc(100% + 200px);
+        }
+      }
+
+      .cloud:nth-child(even) {
+        transform: scale(0.6);
+        animation-delay: 5s;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Happy Valentine's Day!</h1>
+    </header>
+    <section>
+      <div class="container">
+        <h2>To My Lovely Girlfriend,</h2>
+        <p>
+          On this special day, I want to express my love and gratitude for
+          having you in my life.These may not be all, but they are some of my
+          favourite moments with you:
+        </p>
+        <div class="gallery">
+          <!-- Add your videos here -->
+          <video controls>
+            <source
+              src="images/ByScyRqk4qUIKzkNKDqn7.1034.IRZXSOY.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <video controls>
+            <source src="images/Snapchat-455265179.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <video controls>
+            <source src="images/Snapchat-1004485768.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <video controls>
+            <source src="images/Snapchat-1752421666.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <video controls>
+            <source src="images/Snapchat-201923945.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p>
+          Each moment with you is precious and unforgettable. I cherish every
+          second spent by your side.
+        </p>
+        <a href="#journey">Read Our Journey Together</a>
+      </div>
+    </section>
+    <section id="journey" style="background-color: #e6b4e6">
+      <!-- light pink background -->
+      <div class="container">
+        <h2>Our Journey Together</h2>
+        <p>
+          From the day we met, I knew that we would be great for each other Our
+          journey has been a wonderful adventure that i wish was never cut
+          short. Im grateful that even with the distance between us we are still
+          able to make each other smile and have a reason to look forward to
+          another day. I thank you for being there for me, and I want you to
+          know that I love you and always will. Happy Valentines day Baby Girl
+        </p>
+        <p>
+          Here's to many more adventures and memories together. I love you more
+          than words can express.
+        </p>
+      </div>
+    </section>
+    <footer>
+      <div class="heart" style="top: 10px; left: 10px"></div>
+      <div class="heart" style="top: 10px; right: 10px"></div>
+      <div class="heart" style="bottom: 10px; left: 10px"></div>
+      <div class="heart" style="bottom: 10px; right: 10px"></div>
+      <div class="cloud" style="bottom: 0; left: 10%"></div>
+      <div class="cloud" style="bottom: 50px; left: 40%"></div>
+      <p>Created with love by Andre for Tavia</p>
+    </footer>
+  </body>
+</html>
